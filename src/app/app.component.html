@@ -1,0 +1,22 @@
+
+
+<textarea [(ngModel)]="toImport" >
+
+</textarea>
+<br/>
+<button (click)="onImport()"> import</button>
+<br/>
+<input type="text" [(ngModel)]="start" (ngModelChange)="valuechange($event)">
+<br/>
+<textarea [(ngModel)]="shortList" >
+
+</textarea>
+<br/>
+<textarea [(ngModel)]="items" >
+
+</textarea>
+
+
+
+
+<router-outlet></router-outlet>
