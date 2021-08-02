@@ -26,8 +26,9 @@ export class AppComponent {
   onImport() {
     let dic = this.toImport.split(' ')
 
-      this.ac.addDictionary(dic);
+      let root = this.ac.addDictionary(dic);
 
+      console.log(root);
 
       let comp = this.ac.getDictionary();
 

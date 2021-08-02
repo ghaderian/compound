@@ -48,7 +48,7 @@ export class Node {
         }
 
         if (this.childs && this.childs.length === 0) {
-           return [this.content]; 
+           return ['']; 
         }
 
         return []
@@ -84,7 +84,6 @@ export class Node {
 export class AutoComplete {
 
     constructor () {
-
         this.root = new Node('root')
     }
     
